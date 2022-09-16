@@ -1,0 +1,16 @@
+name: Actions Workflof
+on: [push]
+
+jobs:
+  run-github-actions:
+    runs-on: windows-latest
+    steps:
+      - name: Simpe Java script action 
+        id: Greeting
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: Krešo
+      - name: Log Greeting Time
+        run: echo "˘${{ steps.Greeting.outputs.time }}"
+        
+
