@@ -10,11 +10,11 @@ jobs:
           pwd
           ls -a
       - name: Checkout
+        uses: actions/checkout@v1
       - name: list files
         run:  |
           pwd
           ls -a
-        uses: actions/checkout@v1
       - name: Simpe Java script action 
         id: Greeting
         uses: actions/hello-world-javascript-action@v1
