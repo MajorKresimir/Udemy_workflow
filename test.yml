@@ -1,0 +1,23 @@
+name: Krešo
+age: 24
+address: "Maksimirska: 64"
+active: true
+key:
+    key: value
+    key2: 33
+    key3: 
+      key: value
+      key2: value
+array: 
+    - item
+    - item2
+    - {key: value}
+objectsArray:
+    - key: value
+      key2: value
+    - key: value
+      key2: value 2
+longText: >
+    nmcanbnbhscdbh bhchdbc ascbk
+    bhacshkd abckh
+    achkbbhd
