@@ -26,5 +26,6 @@ jobs:
           who-to-greet: Krešo
       - name: Log Greeting Time
         run: echo "˘${{ steps.Greeting.outputs.time }}"
-
-
+      - name: Directory path
+        run: pwd
+        
