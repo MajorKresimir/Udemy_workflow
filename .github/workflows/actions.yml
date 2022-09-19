@@ -3,7 +3,7 @@ on:
   #repository_dispatch: 
   #  types: [build]
   schedule:
-    - cron: "48 * * * *"
+    - cron: "50 * * * *"
   #  - cron: "0/6 * * * *"
   push:
   pull_request:
@@ -13,8 +13,8 @@ jobs:
   run-github-actions:
     runs-on: windows-latest
     steps:
-      - name: payload
-        run: echo ${{ github.event.client_payload.env }}
+      #- name: payload
+      #  run: echo ${{ github.event.client_payload.env }}
       - name: list files
         run:  |
           pwd
