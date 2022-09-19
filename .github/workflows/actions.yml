@@ -2,7 +2,7 @@ name: Actions Workflof
 on: 
   #repository_dispatch:
   schedule:
-    - cron: "25 * * * *"
+    - cron: "28 * * * *"
   #  - cron: "0/6 * * * *"
   #push:
   pull_request:
