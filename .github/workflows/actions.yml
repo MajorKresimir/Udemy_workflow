@@ -1,11 +1,11 @@
 name: Actions Workflof
 on: 
-  repository_dispatch: 
-    types: [build]
-  #schedule:
-  #  - cron: "28 * * * *"
-  #  - cron: "0/6 * * * *"
-  push:
+  #repository_dispatch: 
+  #  types: [build]
+  schedule:
+    - cron: "28 * * * *"
+    - cron: "0/6 * * * *"
+  #push:
   pull_request:
     types: [closed, assigned, opened, reopened]
 
@@ -13,6 +13,8 @@ jobs:
   run-github-actions:
     runs-on: windows-latest
     steps:
+      - name: payload
+        run: echo ${{ github.event.client_payload.env }}
       - name: list files
         run:  |
           pwd
