@@ -1,11 +1,11 @@
 name: Actions Workflof
 on: 
   push:
-    branches:
-      - master
-      - 'feature/*' 
-      - 'feature/**'
-      - '!feature/featC' #to ignore this branch
+    #branches:
+    #  - master
+    #  - 'feature/*' 
+    #  - 'feature/**'
+    #  - '!feature/featC' #to ignore this branch
     #tags:
     #  - v1.*
     #paths:
