@@ -8,9 +8,9 @@ on:
     #  - '!feature/featC' #to ignore this branch
     #tags:
     #  - v1.*
-    #paths:
+    paths:
     #  - '**.js'
-    #  - '!filename.js'
+      - '**/actions.yml'
     #paths-ignore:
      #- 'docs/**'
   #repository_dispatch: 
