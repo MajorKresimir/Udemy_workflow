@@ -1,6 +1,6 @@
 name: Actions Workflof
 on: 
-  push:
+  #push:
     #branches:
     #  - master
     #  - 'feature/*' 
@@ -16,7 +16,7 @@ on:
   #repository_dispatch: 
   #  types: [build]
   schedule:
-    - cron: '41 * * * *'
+    - cron: '44 * * * *'
   #  - cron: '0/6 * * * *'
   #push:
   #pull_request:
