@@ -32,9 +32,9 @@ jobs:
         run:  |
           pwd
           ls 
-          echo "GITHUB_SHA: ${GITHUB_SHA}"
-          echo "GITHUB_REPOSITORY: ${GITHUB_REPOSITORY}"
-          echo "GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}"
+          echo "GITHUB_SHA: ${{ GITHUB_SHA }}"
+          echo "GITHUB_REPOSITORY: ${{ GITHUB_REPOSITORY }}"
+          echo "GITHUB_WORKSPACE: ${{ GITHUB_WORKSPACE }}"
           echo "${{ github.token }}"
       - name: Checkout
         uses: actions/checkout@v1
