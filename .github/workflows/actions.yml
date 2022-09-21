@@ -16,7 +16,7 @@ on:
   #repository_dispatch: 
   #  types: [build]
   schedule:
-    - cron: '44 * * * *'
+    - cron: 49 * * * *
   #  - cron: '0/6 * * * *'
   #push:
   #pull_request:
