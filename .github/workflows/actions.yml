@@ -36,6 +36,7 @@ jobs:
           echo "GITHUB_REPOSITORY: ${{ github.repository }}"
           echo "GITHUB_WORKSPACE: ${{ github.workspace }}"
           echo "${{ github.token }}"
+          echo 'Echo fixed'
       - name: Checkout
         uses: actions/checkout@v1
       - name: list files
