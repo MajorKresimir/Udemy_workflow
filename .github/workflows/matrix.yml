@@ -11,8 +11,8 @@ jobs:
         os: [macos-latest, ubuntu-latest, windows-latest]
         node_version: [11,12,13]
         include:
-          - os: ubuntu-latest
-            node_version: 11
+          - os: windows-latest
+            node_version: 15
             is_ubuntu_11: true
         exclude:
           - os: ubuntu-latest
@@ -33,6 +33,4 @@ jobs:
       - name: Log node version
         run: |
           node -v
-          echo $IS_UBUNTU_11
-
-
+          echo ${{ env.IS_UBUNTU_11 }}
