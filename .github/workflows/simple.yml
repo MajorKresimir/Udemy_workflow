@@ -5,13 +5,17 @@ on: [pull_request] #[push]
 jobs: 
   run-shell-command:
     runs-on: windows-latest
+    timeout-minutes: 360
     steps:
       - name: echo a string
         run: echo "Hello world"
+        continue-on-error: true
       - name: multiline script
+        if: failure()
         run: |
           node -v
           npm -v
+        timeout-minutes: 360
 
       - name: python Commands
         run: |
