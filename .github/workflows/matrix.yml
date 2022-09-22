@@ -12,11 +12,11 @@ jobs:
         node_version: [11,12,13]
         include:
           - os: ubuntu-latest
-            node-version: 11
+            node_version: 11
             is_ubuntu_11: true
         exclude:
           - os: ubuntu-latest
-            node-version: 12
+            node_version: 12
           - os: windows-latest
             node-version: 13
       max-parallel: 5
