@@ -3,7 +3,7 @@ name: Create issue on commit
 on: 
   push:
     paths: 
-      - '**\issue.yml'
+      - '**/issue.yml'
 
 jobs:
   create_issue:
